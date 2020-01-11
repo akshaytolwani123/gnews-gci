@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Google News </title>
+  </head>
+  <body>
+    <h1>Powered By Google News Api</h1>
+    {% for new in news['results'] %}
+    <a href = {{ new.url }}><h3>{{ new.title }}</h3></a>
+    {% endfor %}
+  </body>
+</html>
