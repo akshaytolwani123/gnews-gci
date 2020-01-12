@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>Powered By Google News Api</h1>
-    {% for new in news['results'] %}
+    {% for new in news['articles'] %}
     <a href = {{ new.url }}><h3>{{ new.title }}</h3></a>
     {% endfor %}
   </body>
