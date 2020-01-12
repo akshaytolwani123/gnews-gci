@@ -5,9 +5,18 @@
     <title>Google News </title>
   </head>
   <body>
+    <style>
+    h3 {
+      color: black
+    }
+    body {
+      background-color: MediumSeaGreen
+    }
+</style>
     <h1>Powered By Google News Api</h1>
     {% for new in news['articles'] %}
     <a href = {{ new.url }}><h3>{{ new.title }}</h3></a>
+    <img src= {{ new.urlToImage }}>
     {% endfor %}
   </body>
 </html>
